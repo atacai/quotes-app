@@ -27,7 +27,7 @@ class QuotesDisplay extends React.Component {
       // assign quote ID from the URL`s query string
       this.quoteId = Number(this.qsParams.quote)
     } else {
-      this.quoteId = 1
+      this.quoteId = this.props.startingQuoteId
       // update URL in browser to reflect current quote in query string
       this.props.history.push(`/?quote=${this.quoteId}`)
     }

@@ -4,5 +4,5 @@ import App from './components/App'
 
 const quotes = document.querySelector('#quotes')
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<App />, quotes)
+  ReactDOM.render(<App startingQuoteId={quotes.dataset.startingQuoteId} />, quotes)
 })
